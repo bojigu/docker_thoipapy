@@ -1,0 +1,12 @@
+#numpy
+#scipy
+matplotlib
+scikit-learn
+weighslide
+psutil
+xlrd
+openpyxl
+thoipapy
+#pandas
+#django
+#biopython

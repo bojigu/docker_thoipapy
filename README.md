@@ -27,8 +27,8 @@ And the prediction output can also be printed on the terminal:
 Now we can display all the installed containers, including the thoipa container just installed:
 Docker container ls --all
 ![run docker5](https://github.com/bojigu/docker_thoipapy/blob/master/docs/run_docker5.png)  
-Now we are going to copy the prediction output file from the thoipa container to our host machine:
-docker cp 1204803a81c8:/app/bnip3/THOIPA_out.csv ./output/output.csv
-Where 1204803a81c8 is the container ID.
+Now we are going to copy the prediction output file from the thoipa container to our host machine:  
+docker cp 1204803a81c8:/app/bnip3/THOIPA_out.csv ./output/output.csv  
+Where 1204803a81c8 is the container ID.  
 Now we can access the output file in our local machine.
 

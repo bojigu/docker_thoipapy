@@ -6,7 +6,7 @@ weighslide
 psutil
 xlrd
 openpyxl
-thoipapy
+#thoipapy
 #pandas
 #django
 #biopython

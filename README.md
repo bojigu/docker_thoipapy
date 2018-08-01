@@ -1,6 +1,6 @@
 # docker_thoipapy
 use the docker to run the standalone thoipapy application
-* Installing the Docker
+### Installing the Docker
   * follow the latest instructions to install Docker Community Edition for your operating system
      * https://docs.docker.com/install/
   * e.g. Windows : https://docs.docker.com/docker-for-windows/install/

@@ -76,7 +76,9 @@ ADD . /app
 
 WORKDIR /app
 RUN pip install -r requirements.txt
+
 # download and install from TEST-PyPI, so I don't need to make so many official releases
+# will later be replaced with normal pypi installation
 RUN pip install --index-url https://test.pypi.org/simple/ thoipapy
 
 # Define environment variable

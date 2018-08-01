@@ -88,10 +88,10 @@ RUN pip install --index-url https://test.pypi.org/simple/ thoipapy
 # Run app.py when the container launches
 CMD python -W ignore app.py -i input.txt -f ./
 
-#cd C:/Users/ZENGBO/PycharmProjects/thoipapy_docker
+#cd C:/Users/ZENGBO/PycharmProjects/docker_thoipapy
 #docker build -t friendlyhello .
 #docker run friendlyhello
 #docker system prune -a
 #docker image ls --all
 #docker export 4112ad985867 >contents.tar
-#docker cp 22b60e8ac63c:/app/bnip3/THOIPA_out.csv ./output
+#docker cp 22b60e8ac63c:/app/bnip3/THOIPA_out.csv ./output/output.csv

@@ -6,7 +6,11 @@ weighslide
 psutil
 xlrd
 openpyxl
-#thoipapy
+statsmodels
+biopython
+seaborn
+korbinian
+# thoipapy
 #pandas
 #django
 #biopython

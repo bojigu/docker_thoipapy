@@ -16,12 +16,19 @@ In the docker_thoipapy folder, there are three main files named:
  * dockerfile ,a text document that contains all the commands a user could call on the command line to assemble an image, the dockerfile mainly install perl, python, freecontact, thoipapy, thoipapy dependencies in the docker environment.
  * app.py, the standalone thoipapy prediction application python script.
  * requirements.txt, the python dependencies for thoipapy.
+Now run the build command. This creates a Docker image, which we’re going to tag using -t so it has a name.  
+docker build -t thoipa .
+![run docker2](https://github.com/bojigu/docker_thoipapy/blob/master/docs/run_docker2.png)  
+Run the app:
+docker run thoipa
+![run docker3](https://github.com/bojigu/docker_thoipapy/blob/master/docs/run_docker3.png)  
+And the prediction output can also be printed on the terminal:
+![run docker4](https://github.com/bojigu/docker_thoipapy/blob/master/docs/run_docker4.png)  
+Now we can display all the installed containers, including the thoipa container just installed:
+Docker container ls --all
+![run docker5](https://github.com/bojigu/docker_thoipapy/blob/master/docs/run_docker5.png)  
+Now we are going to copy the prediction output file from the thoipa container to our host machine:
+docker cp 1204803a81c8:/app/bnip3/THOIPA_out.csv ./output/output.csv
+Where 1204803a81c8 is the container ID.
+Now we can access the output file in our local machine.
 
-2. run docker machine in your local computer
-3. git clone https://github.com/bojigu/thoipapy_docker.git
-4. in the opened terminal from step 2, cd to the directory of thoipapy_docker
-5. in the command line, run 'docker build -t predict .'
-6. docker run predict
-7, check the container ID by run: 'docker container ls --all'
-8, export the prediction output file from container to local: 'docker cp 22b60e8ac63c:/app/bnip3/THOIPA_out.csv ./output/output.csv',
-where the doc

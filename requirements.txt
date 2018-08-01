@@ -7,6 +7,7 @@ psutil
 xlrd
 openpyxl
 thoipapy
+korbinian
 #pandas
 #django
 #biopython

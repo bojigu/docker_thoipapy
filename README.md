@@ -7,7 +7,7 @@ use the docker to run the standalone thoipapy application
      * currently the installation differs between Win10 pro and above, and other windows versions.
   * e.g. Linux : https://docs.docker.com/i
 ### Download the thoipapy docker repository
-git clone https://github.com/bojigu/thoipapy_docker.git
+git clone https://github.com/bojigu/thoipapy_docker.git  
 then open the docker machine, e.g. in windows, open the Docker Quickstart Terminal, the terminal looks like this:
 ![run docker1](https://github.com/bojigu/docker_thoipapy/blob/master/docs/run_docker1.png)
 2. run docker machine in your local computer

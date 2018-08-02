@@ -31,6 +31,8 @@ Docker container ls --all
 ### Copy files from the container
 Now we are going to copy the prediction output file from the thoipa container to our host machine:  
 docker cp 1204803a81c8:/app/bnip3/THOIPA_out.csv ./output/output.csv  
+or, we can copy all the prediction folder over to the local host:  
+docker cp 1204803a81c8:/app/bnip3/./output/  
 Where 1204803a81c8 is the container ID.  
 Now we can access the output file in our local machine.
 

@@ -1,13 +1,17 @@
-#numpy
-#scipy
 matplotlib
 scikit-learn
 weighslide
 psutil
 xlrd
 openpyxl
-thoipapy
+statsmodels
+biopython
+seaborn
 korbinian
+# REQUIREMENTS THAT SHOULD BE AUTOMATICALLY INSTALLED USING "PIP INSTALL THOIPAPY"
+#thoipapy
+#numpy
+#scipy
 #pandas
 #django
 #biopython

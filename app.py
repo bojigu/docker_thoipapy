@@ -1,3 +1,7 @@
+import warnings
+warnings.filterwarnings("ignore")
+import matplotlib
+matplotlib.use('Agg')
 import argparse
 import os
 import sys
@@ -7,6 +11,13 @@ from thoipapy.thoipa import get_md5_checksum, run_THOIPA_prediction
 from thoipapy.utils import make_sure_path_exists
 from pathlib import Path
 import glob
+
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
 
 # read the command line arguments
 parser = argparse.ArgumentParser()

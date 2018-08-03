@@ -1,5 +1,3 @@
-#numpy
-#scipy
 matplotlib
 scikit-learn
 weighslide
@@ -10,7 +8,10 @@ statsmodels
 biopython
 seaborn
 korbinian
-# thoipapy
+# REQUIREMENTS THAT SHOULD BE AUTOMATICALLY INSTALLED USING "PIP INSTALL THOIPAPY"
+#thoipapy
+#numpy
+#scipy
 #pandas
 #django
 #biopython

@@ -25,12 +25,14 @@ RUN pip install -r requirements.txt
 
 # download and install from TEST-PyPI, so I don't need to make so many official releases
 # will later be replaced with normal pypi installation
-RUN pip install --index-url https://test.pypi.org/simple/ thoipapy
+#RUN pip install --index-url https://test.pypi.org/simple/ thoipapy
 
+# latest version on pypi should be working now
+RUN pip install thoipapy
 
 # Run app.py when the container launches
-CMD python -W ignore app.py -i 00_test_input.txt -f ./
-
+# runs THOIPA prediction on every input file in the input subfolder
+CMD python -W ignore app.py -d ./input -f ./output
 
 ### docker commind line how to run docker_thoipapy
 # cd C:/Users/ZENGBO/PycharmProjects/docker_thoipapy

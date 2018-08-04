@@ -1,17 +1,17 @@
-matplotlib
-scikit-learn
-weighslide
-psutil
-xlrd
-openpyxl
-statsmodels
+numpy==1.13.3
+matplotlib==2.2.2
+scikit-learn==0.19.1
+psutil==5.4.0
+xlrd==1.1.0
+openpyxl==2.4.8
+statsmodels==0.8.0
 biopython
-seaborn
+#==1.69  gave an error that numpy was not found.
+seaborn==0.9.0
+scipy==0.19.1
+pandas==0.23.3
+django==2.0.5
+weighslide
 korbinian
 # REQUIREMENTS THAT SHOULD BE AUTOMATICALLY INSTALLED USING "PIP INSTALL THOIPAPY"
 #thoipapy
-#numpy
-#scipy
-#pandas
-#django
-#biopython

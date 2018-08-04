@@ -99,6 +99,10 @@ if __name__ == "__main__":
 
         run_THOIPA_prediction(protein_name, md5, TMD_seq, full_seq, out_dir)
 
+    sys.stdout.write("copy your files to local directory:\n"
+                     "docker container ls --all\n"
+                     "docker cp YOUR_THOIPA_CONTAINERID:/app/output/ ./")
+
 
 #DEPRECATED STUFF RUNNING THOIPA standalone on only a single input file
 # # read the command line arguments
